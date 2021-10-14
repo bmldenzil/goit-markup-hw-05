@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>WebStudio-Студия</title>
 </head>
-<body>
+<body class="body">
     <!--шапка-->
     <header class="header">
         <div class="conteiner header-flex">
@@ -19,9 +19,25 @@
                 <a class="logo-one" href="./index.html"><span class="logo">Web</span>Studio</a>
         
                 <ul class="list-header">
-                    <li class="item-header"><a class="item-open open" href="./index.html">Студия</a></li>
-                    <li class="item-header"><a class="item-open" href="./portfolio.html">Портфолио</a></li>
-                    <li class="item-header"><a class="item-open" href="#">Контакты</a></li>
+                    <li class="item-header">
+                        <a class="item-open open" href="./index.html">Студия
+                        <div class="open-action">
+                        </div>
+                    </a>
+                    </li>
+                    <li class="item-header">
+                        <a class="item-open" href="./portfolio.html">Портфолио
+                            <div class="open-action">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item-header">
+                        <a class="item-open" href="#">Контакты
+                            <div class="open-action">
+                            </div>
+                            
+                        </a>
+                    </li>
                 </ul>        
             </nav>
             <div class="contact-header">
@@ -48,12 +64,12 @@
     </header>
     <main>
         <!--оглавление-->
-        <section class="main-top">
+        <section class="section main-top">
             <div class="conteiner">
                 <h1 class="main-text">
                     Эфективное решение <br> для вашего бизнеса
                 </h1>
-                <button class="buton-top" type="button">Заказать услугу</button>
+                <button class="buton-top" data-modal-open type="button">Заказать услугу</button>
             </div>
         </section>
         <!--список-->
@@ -104,15 +120,30 @@
             <div class="conteiner">
                 <h2 class="image-tutle">Чем мы занимаемся</h2>
                 <ul class="image">
-                    <li class="image-list"><img src="./img/работа-с-компьютером.jpg" alt="работа за компьютером" width="370"></li>
-                    <li class="image-list"><img src="./img/синхрнизация.jpg" alt="синхронизация" width="370"></li>
-                    <li class="image-list"><img src="./img/графика.jpg" alt="гафика" width="370"></li>
+                    <li class="image-list">
+                        <div class="image-action">
+                            <img src="./img/работа-с-компьютером.jpg" alt="Десктопные приложения" width="370">
+                            <p class="image-text">Десктопные приложения</p>
+                        </div>
+                    </li>
+                    <li class="image-list">
+                        <div class="image-action">
+                            <img src="./img/синхрнизация.jpg" alt="Мобильные приложения" width="370">
+                            <p class="image-text">Мобильные приложения</p>
+                    </div>
+                    </li>
+                    <li class="image-list">
+                        <div class="image-action">
+                            <img src="./img/графика.jpg" alt="Дизайнерские решения" width="370">
+                            <p class="image-text">Дизайнерские решения</p>
+                        </div>
+                    </li>
                 </ul>  
             </div> 
         </section>      
         <!--команда-->
         
-            <section class="section member-section">
+         <section class="section member-section">
                 <div class="conteiner">
                     <h2 class="mambers-title">Наша команда</h2>
                     <ul class="list-mambers">
@@ -124,25 +155,25 @@
                                 <h3 class="item-name">Игорь Демьяненко</h3>
                                 <p class="item-text">Product Designer</p>
                                 <ul class="social">
-                                    <li><a class="social-link" href="#">
+                                    <li class="social-item"><a class="social-link" href="#">
                                         <svg class="icon-social" width="20"  height="20">
                                             <use href="./img/symbol-defs.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                     </li>
-                                    <li><a class="social-link" href="#">
+                                    <li class="social-item"><a class="social-link" href="#">
                                         <svg class="icon-social" width="20"  height="20">
                                             <use href="./img/symbol-defs.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                     </li>
-                                    <li><a class="social-link" href="#">
+                                    <li class="social-item"><a class="social-link" href="#">
                                         <svg class="icon-social" width="20"  height="20">
                                             <use href="./img/symbol-defs.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                         </li>
-                                    <li><a class="social-link" href="#">
+                                    <li class="social-item"><a class="social-link" href="#">
                                         <svg class="icon-social" width="20"  height="20">
                                             <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                                         </svg>
@@ -157,25 +188,25 @@
                                 <h3 class="item-name">Ольга Репина</h3>
                                 <p class="item-text">Frontend Developer</p>
                                 <ul class="social">
-                                    <li><a class="social-link" href="#">
+                                    <li class="social-item"><a class="social-link" href="#">
                                         <svg class="icon-social" width="20"  height="20">
                                             <use href="./img/symbol-defs.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                     </li>
-                                    <li><a class="social-link" href="#">
+                                    <li class="social-item"><a class="social-link" href="#">
                                         <svg class="icon-social" width="20"  height="20">
                                             <use href="./img/symbol-defs.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                     </li>
-                                    <li><a class="social-link" href="#">
+                                    <li class="social-item"><a class="social-link" href="#">
                                         <svg class="icon-social" width="20"  height="20">
                                             <use href="./img/symbol-defs.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                         </li>
-                                    <li><a class="social-link" href="#">
+                                    <li class="social-item"><a class="social-link" href="#">
                                         <svg class="icon-social" width="20"  height="20">
                                             <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                                         </svg>
@@ -190,25 +221,25 @@
                                 <h3 class="item-name">Николай Тарасов</h3>
                                 <p class="item-text">Marketing</p>   
                                 <ul class="social">
-                                    <li><a class="social-link" href="#">
+                                    <li class="social-item"><a class="social-link" href="#">
                                         <svg class="icon-social" width="20"  height="20">
                                             <use href="./img/symbol-defs.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                     </li>
-                                    <li><a class="social-link" href="#">
+                                    <li class="social-item"><a class="social-link" href="#">
                                         <svg class="icon-social" width="20"  height="20">
                                             <use href="./img/symbol-defs.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                     </li>
-                                    <li><a class="social-link" href="#">
+                                    <li class="social-item"><a class="social-link" href="#">
                                         <svg class="icon-social" width="20"  height="20">
                                             <use href="./img/symbol-defs.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                         </li>
-                                    <li><a class="social-link" href="#">
+                                    <li class="social-item"><a class="social-link" href="#">
                                         <svg class="icon-social" width="20"  height="20">
                                             <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                                         </svg>
@@ -223,25 +254,25 @@
                                 <h3 class="item-name">Михаил Ермаков</h3>
                                 <p class="item-text">UI Designer</p>
                                 <ul class="social">
-                                    <li><a class="social-link" href="#">
+                                    <li class="social-item"><a class="social-link" href="#">
                                         <svg class="icon-social" width="20"  height="20">
                                             <use href="./img/symbol-defs.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                     </li>
-                                    <li><a class="social-link" href="#">
+                                    <li class="social-item"><a class="social-link" href="#">
                                         <svg class="icon-social" width="20"  height="20">
                                             <use href="./img/symbol-defs.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                     </li>
-                                    <li><a class="social-link" href="#">
+                                    <li class="social-item"><a class="social-link" href="#">
                                         <svg class="icon-social" width="20"  height="20">
                                             <use href="./img/symbol-defs.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                         </li>
-                                    <li><a class="social-link" href="#">
+                                    <li class="social-item"><a class="social-link" href="#">
                                         <svg class="icon-social" width="20"  height="20">
                                             <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                                         </svg>
@@ -252,9 +283,9 @@
                             </li>
                     </ul>
                 </div>
-            </section>
+        </section>
             <!-- клиенты -->
-            <section class="section client-section">
+        <section class="section client-section">
                 <div class="conteiner">
                 <h2 class="client-titul">Постоянные клиенты</h2>
                 <ul class="client-list">
@@ -302,7 +333,7 @@
                     </li>
                 </ul>
             </div>
-            </section>
+        </section>
         
     </main>
     <!--контакты-->
@@ -358,6 +389,12 @@
             </div>
 
         </footer>
-   
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="button-close" data-modal-close>закрыть</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
